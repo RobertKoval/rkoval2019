@@ -1,0 +1,16 @@
+PODS:
+  - rkoval2019 (0.1.0)
+
+DEPENDENCIES:
+  - rkoval2019 (from `../`)
+
+EXTERNAL SOURCES:
+  rkoval2019:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  rkoval2019: 4d8da641d14d6a903202b0f04d14c48da0278d31
+
+PODFILE CHECKSUM: c94b449633d73c8000310284f0d438275eeae43b
+
+COCOAPODS: 1.5.3
