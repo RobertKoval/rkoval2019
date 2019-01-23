@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'rkoval2019_Example' do
+  pod 'rkoval2019', :path => '../'
+
+  target 'rkoval2019_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
