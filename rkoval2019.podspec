@@ -28,7 +28,7 @@ It is a swift pool projet. weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrryyyy loooooooooooo
   s.source           = { :git => 'https://github.com/RobertKoval/rkoval2019.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
   s.source_files = 'rkoval2019/Classes/*.{swift,xcdatamodeld}'
   
