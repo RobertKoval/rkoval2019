@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         article2.title = "Title 2"
         article2.content = "Some content in secont Article"
-        article2.creationData = NSDate()
+        article2.creationData =  NSDate()
         article2.modificationDate = NSDate()
         article2.language = "en"
         articleManager.save()
@@ -35,7 +35,8 @@ class ViewController: UIViewController {
         //print(articleManager.getArticles(containString: "secont"))
         //print(articleManager.getAllArticles())
         //print(articleManager.getArticles(withLang: "en"))
-        articleManager.removeArticle(article: article2)
+        //articleManager.removeArticle(article: article2)
+        //articleManager.removeAllArticles()
         print(articleManager.getAllArticles())
 
     }

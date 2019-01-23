@@ -28,7 +28,6 @@ public class ArticleManager {
                 fatalError("Unable to load persistent stores: \(error)")
             }
         })
-        print("All ok")
         self.context = container.viewContext
     }
     
@@ -39,14 +38,24 @@ public class ArticleManager {
         return newArticle as! Article
     }
     
+    public func newArticle(title : String, content : String, language : String, image : Data) -> Article {
+        let newEntity = NSEntityDescription.entity(forEntityName: "Article", in: context)
+        let newArticle = NSManagedObject(entity: newEntity!, insertInto: context) as! Article
+        newArticle.title = title
+        newArticle.content = content
+        newArticle.language = language
+        newArticle.image = image as NSData // ?
+        newArticle.creationData = Date.init() as NSDate
+        newArticle.modificationDate = Date.init() as NSDate
+        self.save()
+        return newArticle
+    }
+    
     public func getAllArticles() -> [Article] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Article")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
-            for articles in result as! [Article] {
-                print(articles.description)
-            }
             return result as! [Article]
         } catch {
             print("Can't fetch articles")
@@ -59,12 +68,9 @@ public class ArticleManager {
         request.predicate = NSPredicate(format: "language == %@", lang)
         do {
             let result = try context.fetch(request)
-            for articles in result as! [Article] {
-                print(articles.description)
-            }
             return result as! [Article]
         } catch {
-            print("Can't find")
+            print("Can't find articles")
         }
         return []
     }
@@ -73,26 +79,33 @@ public class ArticleManager {
         request.predicate = NSPredicate(format: "content contains[cd] %@", str)
         do {
             let result = try context.fetch(request)
-            for articles in result as! [Article] {
-                print(articles.description)
-            }
             return result as! [Article]
         } catch {
-            print("Can't find")
+            print("Can't find articles with \(str)")
         }
         return []
     }
     
     public func removeArticle(article : Article) {
         context.delete(article)
+        self.save()
+    }
+    
+    public func removeArticles(articles : [Article]) {
+        articles.forEach({context.delete($0)})
+        self.save()
+    }
+    
+    public func removeAllArticles() {
+        let allArticles = self.getAllArticles()
+        removeArticles(articles: allArticles)
+        self.save()
     }
     
     public func save() {
-        
         if context.hasChanges {
             do {
                 try context.save()
-                print("SAved")
             } catch {
                 fatalError("Can't save changes!")
             }
