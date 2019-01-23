@@ -16,7 +16,8 @@
 		7BF527817A76AAC30F9A2B70F7FAE5A8 /* rkoval2019-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1072125B0302CFE5A5512D7104D07D35 /* rkoval2019-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E9EB6C65AC5E4937602E115F75FB39B /* Pods-rkoval2019_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E058A9EBF203E884A93CB850797EBB /* Pods-rkoval2019_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8994B1A450F85C4A53A4FDA59B875BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		FC5E3002CDBD7DE9A0B27DBCF963E849 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9554ADF0E4925863E173D9318F4FD /* ReplaceMe.swift */; };
+		F45E81AC21F89B72006EA8A4 /* Article+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E81AB21F89B72006EA8A4 /* Article+CoreData.swift */; };
+		F45E81AF21F89F6B006EA8A4 /* Article.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45E81AD21F89F6B006EA8A4 /* Article.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,37 +41,38 @@
 		0A9D9C65125F8756231B613A4548067E /* Pods-rkoval2019_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-rkoval2019_Example-dummy.m"; sourceTree = "<group>"; };
 		0F71A19A4799D96CEEF7F6F6D38C8021 /* Pods-rkoval2019_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rkoval2019_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1072125B0302CFE5A5512D7104D07D35 /* rkoval2019-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "rkoval2019-umbrella.h"; sourceTree = "<group>"; };
-		1450FB17600E45702F86AC2B3F93DD7C /* Pods_rkoval2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_rkoval2019_Tests.framework; path = "Pods-rkoval2019_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1450FB17600E45702F86AC2B3F93DD7C /* Pods_rkoval2019_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rkoval2019_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E155FA884161B36FF341E5DE1A061FB /* Pods-rkoval2019_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-rkoval2019_Tests-umbrella.h"; sourceTree = "<group>"; };
-		209FAE63FB4E6A2B1D634CC4EDE48FA7 /* rkoval2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = rkoval2019.framework; path = rkoval2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		209FAE63FB4E6A2B1D634CC4EDE48FA7 /* rkoval2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rkoval2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22164C4ADAB98CBD5D920FB586507CB3 /* Pods-rkoval2019_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-rkoval2019_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24A9554ADF0E4925863E173D9318F4FD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = rkoval2019/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		26D401907D8D1F3497FBD138E3F8BBBE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		26D401907D8D1F3497FBD138E3F8BBBE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		27B0AEEE284B81E203F682E3FE39EF88 /* Pods-rkoval2019_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-rkoval2019_Example.modulemap"; sourceTree = "<group>"; };
 		2EEB463AA9094843EEB66CCEA5AA8ECC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384AC0154BC6B518D7CDD254322E08F9 /* rkoval2019-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "rkoval2019-prefix.pch"; sourceTree = "<group>"; };
-		456148645B7094C3B240EC35361472CE /* Pods_rkoval2019_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_rkoval2019_Example.framework; path = "Pods-rkoval2019_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		456148645B7094C3B240EC35361472CE /* Pods_rkoval2019_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rkoval2019_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		485D262760E7C2E2A071A44F53C9A0F5 /* rkoval2019-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "rkoval2019-dummy.m"; sourceTree = "<group>"; };
 		4BC17AC55EA749FD1DCDE756E1E29B07 /* Pods-rkoval2019_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rkoval2019_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CE7E131C46EC095303E3086343CD146 /* Pods-rkoval2019_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rkoval2019_Example-resources.sh"; sourceTree = "<group>"; };
 		53DEB9F35AFD4D2796A33371C0BEF363 /* Pods-rkoval2019_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rkoval2019_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5447441C8AC7EAE07F672C9AEB0BBE3A /* rkoval2019.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = rkoval2019.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5447441C8AC7EAE07F672C9AEB0BBE3A /* rkoval2019.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = rkoval2019.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5B328E9F31D9B57B4DBC9C8C2E2F61EE /* Pods-rkoval2019_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-rkoval2019_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6382DD67D38940A585243652D593F19A /* Pods-rkoval2019_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rkoval2019_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6A43D3B96D0C6A5BB2B8CD1B04E75DF6 /* Pods-rkoval2019_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rkoval2019_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6EC6AE289673FD45422A0C740699115B /* rkoval2019.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = rkoval2019.modulemap; sourceTree = "<group>"; };
 		91D083DD1618CB22F233584AF906ED62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7B6857F8CEDC1C323B632AA6E75FE3 /* Pods-rkoval2019_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-rkoval2019_Tests.modulemap"; sourceTree = "<group>"; };
 		B81B9CF53630B41C09ACA95BF20CF265 /* Pods-rkoval2019_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rkoval2019_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBB2419612AA82421B3E2339FE22CA35 /* rkoval2019.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = rkoval2019.xcconfig; sourceTree = "<group>"; };
 		CA6FA7F0527F01F7FB8BF50A7EE7E823 /* Pods-rkoval2019_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-rkoval2019_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D79432528FA3044451D6E42D1EEBA7DC /* Pods-rkoval2019_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-rkoval2019_Tests-dummy.m"; sourceTree = "<group>"; };
-		DDA0786B912CD009CAE21D3A08292E3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DDA0786B912CD009CAE21D3A08292E3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1A5E7A5B70A9D3B71A7483E8990CB9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E058A9EBF203E884A93CB850797EBB /* Pods-rkoval2019_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-rkoval2019_Example-umbrella.h"; sourceTree = "<group>"; };
 		ED93CE96AF84BF25C0C1C4CBCFD0610D /* Pods-rkoval2019_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rkoval2019_Tests-resources.sh"; sourceTree = "<group>"; };
+		F45E81AB21F89B72006EA8A4 /* Article+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Article+CoreData.swift"; path = "rkoval2019/Classes/Article+CoreData.swift"; sourceTree = "<group>"; };
+		F45E81AE21F89F6B006EA8A4 /* Article.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Article.xcdatamodel; sourceTree = "<group>"; };
 		F63AE6B055FE47E2504E8ED29AE160FD /* Pods-rkoval2019_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-rkoval2019_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,9 +139,10 @@
 		4058DACB892AA48FC0F0272B0DECA5A3 /* rkoval2019 */ = {
 			isa = PBXGroup;
 			children = (
-				24A9554ADF0E4925863E173D9318F4FD /* ReplaceMe.swift */,
 				F50620AA354AF9C36FB182C6C95957D4 /* Pod */,
 				3B88A5B0125CAF4F652410575366D968 /* Support Files */,
+				F45E81AB21F89B72006EA8A4 /* Article+CoreData.swift */,
+				F45E81AD21F89F6B006EA8A4 /* Article.xcdatamodeld */,
 			);
 			name = rkoval2019;
 			path = ../..;
@@ -321,6 +324,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					415B927597AFFD51996A3525CEF4810E = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -370,7 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45E81AC21F89B72006EA8A4 /* Article+CoreData.swift in Sources */,
 				18180D32EB6175E9D036F5BB2BAB098D /* Pods-rkoval2019_Example-dummy.m in Sources */,
+				F45E81AF21F89F6B006EA8A4 /* Article.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5E3002CDBD7DE9A0B27DBCF963E849 /* ReplaceMe.swift in Sources */,
 				0BCF22060E6FD2D6DBFF8323682E1E99 /* rkoval2019-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +455,7 @@
 			baseConfigurationReference = 0F71A19A4799D96CEEF7F6F6D38C8021 /* Pods-rkoval2019_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -468,6 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -596,8 +607,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -608,6 +618,7 @@
 			baseConfigurationReference = B81B9CF53630B41C09ACA95BF20CF265 /* Pods-rkoval2019_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -630,6 +641,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -774,6 +787,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F45E81AD21F89F6B006EA8A4 /* Article.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F45E81AE21F89F6B006EA8A4 /* Article.xcdatamodel */,
+			);
+			currentVersion = F45E81AE21F89F6B006EA8A4 /* Article.xcdatamodel */;
+			name = Article.xcdatamodeld;
+			path = rkoval2019/Classes/Article.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
