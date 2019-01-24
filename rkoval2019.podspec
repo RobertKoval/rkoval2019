@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'rkoval2019'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'rkoval2019 - CoreData project'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ It is a swift pool projet. weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrryyyy loooooooooooo
   s.swift_version = '4.0'
   s.source_files = 'rkoval2019/Classes/*.{swift,xcdatamodeld}'
   
-  # s.resource_bundles = {
-  #   'rkoval2019' => ['rkoval2019/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'rkoval2019' => ['rkoval2019/Classes/*.xcdatamodeld']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'CoreData'
